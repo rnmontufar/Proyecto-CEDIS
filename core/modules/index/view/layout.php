@@ -65,7 +65,7 @@ if(Session::getUID()!=""):
               <li><a href="index.php?view=rent"><i class="fa fa-cube"></i> Prestamo</a></li>
               <li><a href="index.php?view=devo"><i class="fa fa-th-large"></i> devoluciones</a></li>
               <?php if($u->is_admin):?>
-              <li><a href="index.php?view=reports"><i class="fa fa-area-chart"></i> Reportes</a></li>
+              <li><a href="index.php?view=reports"><i class="fa fa-area-chart"></i> Solicitudes</a></li>
               <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
               <?php endif;?>
           </ul>
