@@ -6,6 +6,21 @@
 <input type="hidden" name="view" value="reports">
 
 </form>
+
+<table class="table table-bordered table-hover">
+			<thead>
+				<th>Codigo</th>
+				<th>Titulo</th>
+				<th>Categoria</th>
+				<th>CUI</th>
+				<th>Usuario</th>
+				<th>DNI</th>
+				<th>Tipo Prestamo</th>
+				<th>Fecha Solicitud</th>
+				<th>Fecha entrega</th>
+				<th>Acciones</th>
+			</thead>
+
 <?php
 
 if(isset($_GET["start_at"]) && $_GET["start_at"]!="" && isset($_GET["finish_at"]) && $_GET["finish_at"]!=""){
