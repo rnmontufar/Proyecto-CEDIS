@@ -43,7 +43,7 @@ $devos = SolicitudData::getAll();
 				
 				<td style="width:210px;">
 				<a href="index.php?view=editsoli&id=<?php echo $obj->id;?>" class="btn btn-warning btn-xs">Editar</a>
-				<a href="index.php?view=editsoli&id=<?php echo $obj->id;?>" class="btn btn-info btn-xs">Aceptar</a>
+				<a href="index.php?view=editsoli2&id=<?php echo $obj->id;?>" class="btn btn-info btn-xs">Aceptar</a>
 				</td>
 				</tr>
 				<?php
