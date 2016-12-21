@@ -1,5 +1,6 @@
 <?php
 class SolicitudData {
+
 	public static $tablename = "solicitud";
 
 	public function SolicitudData(){

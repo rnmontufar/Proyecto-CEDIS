@@ -6,7 +6,7 @@
 
 
 		<?php
-$devos = SolicitudData::getAll();
+		$devos = SolicitudData::getAll();
 		if(count($devos)>0){
 			// si hay usuarios
 			?>
