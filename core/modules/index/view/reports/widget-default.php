@@ -10,6 +10,7 @@
 
 
 	<?php
+	echo "ok";
 	$reqs = RequestData::getAll();
 		if(count($reqs)>0){
 			// si hay usuarios
@@ -29,22 +30,19 @@
 			</thead>
 
 			<?php
-			foreach($users as $user){
+			foreach($reqs as $req){
 				?>
 				<tr>
-				<td><?php echo $user->name." ".$user->lastname; ?></td>
-				<td><?php echo $user->username; ?></td>
-				<td>
-					<?php if($user->is_active):?>
-						<i class="glyphicon glyphicon-ok"></i>
-					<?php endif; ?>
-				</td>
-				<td>
-					<?php if($user->is_admin):?>
-						<i class="glyphicon glyphicon-ok"></i>
-					<?php endif; ?>
-				</td>
-				<td style="width:30px;"><a href="index.php?view=edituser&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a></td>
+					<td><?php echo $req->id; ?></td>
+					<td></td>
+					<td></td>
+					<td><?php echo $req->cui; ?></td>
+					<td><?php echo $req->user_id; ?></td>
+					<td><?php echo $req->dni; ?></td>
+					<td><?php echo $req->tipo_prestamo; ?></td>
+					<td><?php echo $req->fech_sol; ?></td>
+					<td><?php echo $req->fech_ent; ?></td>
+					<td style="width:30px;"><a href="index.php?view=edituser&id=<?php echo $req->id;?>" class="btn btn-warning btn-xs">Aceptar</a></td>
 				</tr>
 				<?php
 			}
