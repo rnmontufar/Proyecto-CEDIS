@@ -35,7 +35,12 @@ INSERT INTO `book` (`id`, `title`, `author`, `edition`, `observations`, `categor
 (1, 'La vida es sueÃ±o', 'Calderon de la barca', 1, 'Literatura antigua polaca', 1, 0, 3),
 (2, 'La palabra del mudo', 'Julio RamÃ³n Ribeyro', 1, 'series de cuentos', 2, 0, 3),
 (3, 'Paco Yunque', 'CÃ©sar Vallejo', 2, 'cuento o relato corto de tipo infantil', 2, 1, 3),
-(4, 'La niela', 'Stephen King', 1, 'los moustros se ocultan en los mas espeso de la niebla ', 3, 0, 3);
+(4, 'La niela', 'Stephen King', 1, 'los moustros se ocultan en los mas espeso de la niebla ', 3, 0, 3),
+(5, 'Analysis ans Design of Algorithm', 'Cormen, Leiserson', 4, 'Libro de analisi y disenho de algoritmos, para estudiantes talentosos', 1, 0, 3),
+(6, 'Comptetitive Programming', 'Steven Halim, Paco Halim', 4, 'Libro de programacion con todos los tips incluidos para estudiantes ansiosos de participar en la  ACM-ICPC', 2, 0, 3),
+(7, 'Java a First Aproach', 'Deitel and Deitel', 5, 'Libro de Java para estudiantes de Primer anho', 2, 1, 3),
+(8, 'C++ A First Aproach', 'Deitel and Deitel', 5, 'Libro de Java para estudiantes de Primer anho', 2, 1, 3);
+
 
 -- --------------------------------------------------------
 
@@ -58,7 +63,9 @@ CREATE TABLE `category` (
 INSERT INTO `category` (`id`, `name`, `description`, `book_counter`, `status_id`) VALUES
 (1, 'Europeas', 'literatura europea', 1, 3),
 (2, 'Peruana', 'Obras Peruanas', 2, 3),
-(3, 'Terror', 'Para Asustar con suspenso', 1, 3);
+(3, 'Terror', 'Para Asustar con suspenso', 1, 3),
+(4, 'Programacion', 'Libros de Programacion a nivel de Algoritmos', 1, 3),
+(5, 'Theoria', 'Libros de teoria acerca de programacion', 1, 3);
 
 -- --------------------------------------------------------
 
