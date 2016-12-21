@@ -1,7 +1,7 @@
 <?php
 
 if(Session::getUID()!=""){
-		print "<script>window.location='index.php?view=home';</script>";
+		print "<script>window.location='index.php?view=books';</script>";
 }
 
 ?>
