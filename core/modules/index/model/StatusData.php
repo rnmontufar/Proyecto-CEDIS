@@ -4,11 +4,7 @@ class StatusData {
 
 
 	public function StatusData(){
-		$this->name = "";
-		$this->lastname = "";
-		$this->email = "";
-		$this->password = "";
-		$this->created_at = "NOW()";
+
 	}
 
 	public function add(){

@@ -4,11 +4,6 @@ class BookData {
 
 
 	public function BookData(){
-		$this->name = "";
-		$this->lastname = "";
-		$this->email = "";
-		$this->password = "";
-		$this->created_at = "NOW()";
 	}
 
 	public function getCategory(){ return $this->category_id!=null? CategoryData::getById($this->category_id) : null ; }

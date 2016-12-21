@@ -4,12 +4,6 @@ class CategoryData {
 
 
 	public function CategoryData(){
-		$this->name = "";
-		$this->lastname = "";
-		$this->email = "";
-		$this->password = "";
-		$this->book_counter = 0;
-		$this->created_at = "NOW()";
 	}
     
     public function getStatus(){ return StatusData::getById($this->status_id); }

@@ -3,12 +3,6 @@ class UserData {
 	public static $tablename = "user";
 
 	public function UserData(){
-		$this->name = "";
-		$this->lastname = "";
-		$this->username = "";
-		$this->password = "";
-		$this->is_active = "0";
-		$this->created_at = "NOW()";
 	}
 
 	public function add(){
