@@ -54,18 +54,15 @@ if(Session::getUID()!=""):
          <ul class="nav navbar-nav">
           </ul> 
            <ul class="nav navbar-nav side-nav">
-              <li><a href="index.php?view=home"><i class="fa fa-home"></i> Inicio</a></li>
               <li><a href="index.php?view=books"><i class="fa fa-book"></i>Biblioteca</a>
                  <ul class="dropdown" >
                    <li><a href="index.php?view=books"><i class="fa fa-book"></i> Libros</a></li><br>
                    <li><a href="index.php?view=categories"><i class="fa fa-th-list"></i> Categorias</a></li>
                  </ul>
               </li>
-              <li><a href="index.php?view=clients"><i class="fa fa-male"></i> Clientes</a></li>
-              <li><a href="index.php?view=rent"><i class="fa fa-cube"></i> Prestamo</a></li>
               <li><a href="index.php?view=devo"><i class="fa fa-th-large"></i> devoluciones</a></li>
               <?php if($u->is_admin):?>
-              <li><a href="index.php?view=reports"><i class="fa fa-area-chart"></i> Reportes</a></li>
+              <li><a href="index.php?view=soli"><i class="fa fa-area-chart"></i> Solicitudes</a></li>
               <li><a href="index.php?view=users"><i class="fa fa-users"></i> Usuarios </a></li>
               <?php endif;?>
           </ul>

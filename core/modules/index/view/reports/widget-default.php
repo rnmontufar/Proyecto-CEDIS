@@ -7,7 +7,15 @@
 
 </form>
 
-<table class="table table-bordered table-hover">
+
+
+	<?php
+	echo "ok";
+	$reqs = RequestData::getAll();
+		if(count($reqs)>0){
+			// si hay usuarios
+			?>
+			<table class="table table-bordered table-hover">
 			<thead>
 				<th>Codigo</th>
 				<th>Titulo</th>
@@ -21,52 +29,27 @@
 				<th>Acciones</th>
 			</thead>
 
-<?php
-
-if(isset($_GET["start_at"]) && $_GET["start_at"]!="" && isset($_GET["finish_at"]) && $_GET["finish_at"]!=""){
-	$users = OperationData::getByRange($_GET["start_at"],$_GET["finish_at"]);
-		if(count($users)>0){
-			// si hay usuarios
-			$_SESSION["report_data"] = $users;
-			?>
-			<div class="panel panel-default">
-			<div class="panel-heading">
-			Reportes</div>
-			<table class="table table-bordered table-hover">
-			<thead>
-			<th>Ejemplar</th>
-			<th>Titulo</th>
-			<th>Cliente</th>
-			<th>Fecha</th>
-			</thead>
 			<?php
-			$total = 0;
-			foreach($users as $user){
-				$item  = $user->getItem();
-				$client  = $user->getClient();
-				$book = $item->getBook();
+			foreach($reqs as $req){
 				?>
 				<tr>
-				<td><?php echo $item->code; ?></td>
-				<td><?php echo $book->title; ?></td>
-				<td><?php echo $client->name." ".$client->lastname; ?></td>
-				<td><?php echo $user->returned_at; ?></td>
+					<td><?php echo $req->id; ?></td>
+					<td></td>
+					<td></td>
+					<td><?php echo $req->cui; ?></td>
+					<td><?php echo $req->user_id; ?></td>
+					<td><?php echo $req->dni; ?></td>
+					<td><?php echo $req->tipo_prestamo; ?></td>
+					<td><?php echo $req->fech_sol; ?></td>
+					<td><?php echo $req->fech_ent; ?></td>
+					<td style="width:30px;"><a href="index.php?view=edituser&id=<?php echo $req->id;?>" class="btn btn-warning btn-xs">Aceptar</a></td>
 				</tr>
 				<?php
-
 			}
-			echo "</table>";
-			?>
-			<?php
 		}else{
-			echo "<p class='alert alert-danger'>No hay datos.</p>";
+			// no hay usuarios
 		}
-		}else{
-			echo "<p class='alert alert-danger'>Debes seleccionar un rango de fechas.</p>";
-		}
-
-
-		?>
+	?>
 
 
 	</div>
