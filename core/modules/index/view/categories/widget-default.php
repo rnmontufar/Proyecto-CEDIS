@@ -32,7 +32,10 @@
 				<th><?php echo $user->description; ?></th>
 				<th><?php echo $estado->name; ?></th>
 				<th><?php echo $user->book_counter; ?></th>
-				<td style="width:130px;"><a href="index.php?view=editcategory&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a> <a href="index.php?action=delcategory&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
+				<td style="width:130px;">
+				<a href="index.php?view=viewcategory&id=<?php echo $user->id;?>" class="btn btn-info btn-xs">O</a>
+				<a href="index.php?view=editcategory&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a> 
+				<a href="index.php?action=delcategory&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
 				</tr>
 				<?php
 
