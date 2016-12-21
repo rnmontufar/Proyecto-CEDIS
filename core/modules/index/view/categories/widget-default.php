@@ -14,6 +14,7 @@
 
 			<table class="table table-bordered table-hover">
 			<thead>
+			<th>#</th>
 			<th>Nombre</th>
 			<th>Descripcion</th>
 			<th>Estado</th>
@@ -21,10 +22,12 @@
 			<th>Acciones</th>
 			</thead>
 			<?php
+			$index = 1;
 			foreach($users as $user){
 				$estado = $user->getStatus();
 				?>
 				<tr>
+				<td><?php echo $index++; ?></td>
 				<td><?php echo $user->name; ?></td>
 				<th><?php echo $user->description; ?></th>
 				<th><?php echo $estado->name; ?></th>

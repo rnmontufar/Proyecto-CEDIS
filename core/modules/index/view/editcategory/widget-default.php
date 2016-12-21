@@ -20,11 +20,15 @@
     </div>
   </div>
 
-  <div class="form-group">
+  <div class="form-group" id="checkear">
     <label for="inputEmail1" class="col-lg-2 control-label">Estado*</label>
     <div class="col-lg-10">
-      <input type="checkbox" name="estado" id="estado" value = "2"> Inactivo<br>
-      <input type="checkbox" name="estado" id="estado" value = "3" checked> Activo<br>
+      <div class="radio">
+        <label><input type="radio" name="estado" value="2" checked>Inactivo</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="estado" value="3" >Activo</label>
+      </div>
     </div>
   </div>
 
@@ -34,11 +38,6 @@
       <button type="submit" class="btn btn-success">Actualizar Categoria</button>
     </div>
   </div>
-  <script>
-   $('input[type="checkbox"]').on('change', function() {
-     $('input[type="checkbox"]').not(this).prop('checked', false);
-  });
-  </script>
 </form>
 	</div>
 </div>
