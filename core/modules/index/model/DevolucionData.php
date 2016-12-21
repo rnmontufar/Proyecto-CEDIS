@@ -30,7 +30,7 @@ class DevolucionData {
 
 
 	public static function getAll(){
-		$sql = "select * from ".self::$tablename;
+		$sql = "select * from ".self::$tablename." where status_id=4 ";
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new DevolucionData());
 	}

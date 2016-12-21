@@ -24,6 +24,20 @@ $estado =StatusData::getAll();
   </div>
   
   <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">DNI</label>
+    <div class="col-lg-10">
+      <?php echo $devo->dni; ?>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">CUI</label>
+    <div class="col-lg-10">
+      <?php echo $devo->cui; ?>
+    </div>
+  </div>
+
+  <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Estado</label>
        <div class="col-lg-10">
            <select name="status_id" class="form-control">
