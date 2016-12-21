@@ -9,8 +9,16 @@
     //del orden de creacion.
     assert("getAll()","Assertion failed");
 
+    assert("getAll()","Assertion failed");
+    
+    assert("getAll()","Assertion failed");
+
 
     //Test de actualizacion de registro.
+    assert("update()","Assertion failed");
+
+    assert("update()","Assertion failed");
+
     assert("update()","Assertion failed");
 
 
@@ -24,6 +32,23 @@
     $id = '0';
     assert("getById($id)","Assertion failed");
 
-    //
+    //Test 3
+    $id = '4';
+    assert("getById($id)","Assertion failed");
+
+    //Test 4
+    $id = '1000';
+    assert("getById($id)","Assertion failed");
+
+    //Test 5
+    $id = '10';
+    assert("getById($id)","Assertion failed");
+
+
+    //Test de recuperacion de registros mediante fechas.
+    assert("getEvery()","Assertion failed");
+
+    assert("getEvery()","Assertion failed");
+    
     assert("getEvery()","Assertion failed");
 ?>
