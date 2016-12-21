@@ -23,14 +23,11 @@
     public function testGetStatus(){
       $this->test->status_id = '1';
       $status = $this->test->getStatus();
-      $this->assertTrue($status == 'pendiente');
+      $this->assertTrue($status->id == '1');
     }
-    /*
-    public function testGetById(){
-      $idB = $this->test->getById(1);
-      $this->assertTrue($idB == $idBook);
-    }
-    */
+    
+
+    
     
   }
 
