@@ -1,7 +1,13 @@
 <?php
 
-    include("phpunit-5.7.4.phar");
     include("../model/SolicitudData.php");
+    require_once '../model/BookData.php';
+  require_once '../model/StatusData.php';
+  include ('../../../controller/Database.php');
+  require_once '../../../controller/Executor.php';
+  require_once '../model/DevolucionData.php';
+  require_once '../../../controller/Model.php';
+
     class SolicitudPhpUnit extends PHPUnit_Framework_TestCase{
 
         // Funcion para testing de la funcion getAll()
@@ -9,7 +15,7 @@
             
             $SolicitudData = new SolicitudData();
 
-            $expected = ;
+            $expected = $SolicitudData->getTest();
 
             $this->assertEquals($expected, $SolicitudData->getAll());
 
@@ -20,7 +26,7 @@
             
             $SolicitudData = new SolicitudData();
 
-            $expected = ;
+            $expected = $SolicitudData->getTest();
 
             $this->assertEquals($expected, $SolicitudData->update());
 
@@ -33,7 +39,7 @@
 
             $id = '1';
 
-            $expected = ;
+            $expected = $SolicitudData->getTest();
 
             $this->assertEquals($expected, $SolicitudData->getById($id));
         }
@@ -43,7 +49,7 @@
             
             $SolicitudData = new SolicitudData();
 
-            $expected = ;
+            $expected = $SolicitudData->getTest();
 
             $this->assertEquals($expected, $SolicitudData->getEvery());
 
