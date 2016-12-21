@@ -39,6 +39,7 @@ $books = BookData::getAll();
 				<td><?php echo $estado->name;  ?></td>
 				
 				<td style="width:210px;">
+				<a href="index.php?view=viewbook&id=<?php echo $user->id;?>" class="btn btn-info btn-xs">Ver Libro</a>
 				<a href="index.php?view=editbook&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a>
 				<a href="index.php?action=delbook&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a>
 				</td>

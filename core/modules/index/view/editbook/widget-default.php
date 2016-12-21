@@ -62,7 +62,7 @@ $estado =StatusData::getAll();
     <label for="inputEmail1" class="col-lg-2 control-label">CD</label>
     <div class="col-lg-10">
       <div class="radio">
-        <label><input type="radio" name="has_cd" value="0" checked>NO</label>
+        <label><input type="radio" name="has_cd" value="0" >NO</label>
       </div>
       <div class="radio">
         <label><input type="radio" name="has_cd" value="1" >SI</label>
@@ -81,9 +81,9 @@ $estado =StatusData::getAll();
            </select>
        </div>
   </div>
-
-
   <div class="form-group">
+
+
     <div class="col-lg-offset-2 col-lg-10">
     <input type="hidden" name="id" value="<?php echo $book->id; ?>">
       <button type="submit" class="btn btn-success">Actualizar Libro</button>
